@@ -1888,6 +1888,8 @@ supported_targets! {
     ("riscv64gc-unknown-hermit", riscv64gc_unknown_hermit),
     ("x86_64-unknown-hermit", x86_64_unknown_hermit),
 
+    ("x86_64-unknown-coconut", x86_64_unknown_coconut),
+
     ("x86_64-unikraft-linux-musl", x86_64_unikraft_linux_musl),
 
     ("armv7-unknown-trusty", armv7_unknown_trusty),

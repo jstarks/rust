@@ -60,6 +60,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "coconut-abi"
+version = "0.1.0"
+dependencies = [
+ "compiler_builtins",
+ "rustc-std-workspace-alloc",
+ "rustc-std-workspace-core",
+]
+
+[[package]]
 name = "compiler_builtins"
 version = "0.1.145"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -319,6 +328,7 @@ dependencies = [
  "addr2line",
  "alloc",
  "cfg-if",
+ "coconut-abi",
  "compiler_builtins",
  "core",
  "dlmalloc",

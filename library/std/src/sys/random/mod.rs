@@ -74,6 +74,7 @@ cfg_if::cfg_if! {
         pub use zkvm::fill_bytes;
     } else if #[cfg(any(
         all(target_family = "wasm", target_os = "unknown"),
+        target_os = "coconut",
         target_os = "xous",
     ))] {
         // FIXME: finally remove std support for wasm32-unknown-unknown
@@ -87,6 +88,7 @@ cfg_if::cfg_if! {
     target_os = "linux",
     target_os = "android",
     all(target_family = "wasm", target_os = "unknown"),
+    target_os = "coconut",
     target_os = "xous",
 )))]
 pub fn hashmap_random_keys() -> (u64, u64) {

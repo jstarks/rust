@@ -1,3 +1,6 @@
+#[cfg(target_os = "coconut")]
+use coconut_abi as libc;
+
 use super::{MIN_ALIGN, realloc_fallback};
 use crate::alloc::{GlobalAlloc, Layout, System};
 use crate::ptr;

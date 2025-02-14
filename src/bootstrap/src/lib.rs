@@ -658,7 +658,7 @@ impl Build {
         }
 
         // If zkvm target, generate memcpy, etc.
-        if target.contains("zkvm") {
+        if target.contains("zkvm") || target.contains("coconut") {
             features.insert("compiler-builtins-mem");
         }
 

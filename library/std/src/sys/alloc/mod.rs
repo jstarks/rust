@@ -72,6 +72,7 @@ cfg_if::cfg_if! {
         target_family = "unix",
         target_os = "wasi",
         target_os = "teeos",
+        target_os = "coconut",
     ))] {
         mod unix;
     } else if #[cfg(target_os = "windows")] {
